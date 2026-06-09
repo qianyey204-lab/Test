@@ -146,8 +146,8 @@ onValue(ref(db, "commands/current"), (snapshot) => {
     // 再生時間を speed で切り替え
     let durationMs = 3000; // デフォルト3秒
     if (speed === 1) durationMs = 3000; // 3秒
-    if (speed === 2) durationMs = 2000; // 2秒
-    if (speed === 3) durationMs = 1000; // 1秒
+    if (speed === 2) durationMs = 2250; // 2秒
+    if (speed === 3) durationMs = 1500; // 1秒
 
     window.audio.play().then(() => {
       // 再生が実際に始まったタイミングでカウント開始
